@@ -1,18 +1,18 @@
 <?php
 
-namespace Asantibanez\LivewireCharts\Facades;
+namespace Hamoi1\LivewireCharts\Facades;
 
-use Asantibanez\LivewireCharts\Models\AreaChartModel;
-use Asantibanez\LivewireCharts\Models\ColumnChartModel;
-use Asantibanez\LivewireCharts\Models\LineChartModel;
-use Asantibanez\LivewireCharts\Models\PieChartModel;
-use Asantibanez\LivewireCharts\Models\RadarChartModel;
-use Asantibanez\LivewireCharts\Models\TreeMapChartModel;
+use Hamoi1\LivewireCharts\Models\AreaChartModel;
+use Hamoi1\LivewireCharts\Models\ColumnChartModel;
+use Hamoi1\LivewireCharts\Models\LineChartModel;
+use Hamoi1\LivewireCharts\Models\PieChartModel;
+use Hamoi1\LivewireCharts\Models\RadarChartModel;
+use Hamoi1\LivewireCharts\Models\TreeMapChartModel;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class LivewireCharts
- * @package Asantibanez\LivewireCharts\Facades
+ * @package Hamoi1\LivewireCharts\Facades
  * @method static LineChartModel lineChartModel()
  * @method static LineChartModel multiLineChartModel()
  * @method static ColumnChartModel columnChartModel()

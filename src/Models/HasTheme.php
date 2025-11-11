@@ -1,17 +1,17 @@
 <?php
 
-
-namespace Asantibanez\LivewireCharts\Models;
-
+namespace Hamoi1\LivewireCharts\Models;
 
 trait HasTheme
 {
     private $theme;
+
     private $mode;
+
     private $palette;
 
     /**
-     * Initialize 
+     * Initialize
      */
     public function initTheme()
     {
@@ -20,22 +20,21 @@ trait HasTheme
 
     /**
      * set default theme
-     * 
+     *
      * @return array $theme
      */
     private function defaultTheme()
     {
         return [
             'mode' => 'light',
-            'palette' => 'palette1'
+            'palette' => 'palette1',
         ];
     }
 
     /**
      * set theme mode
-     * 
-     * @param string $mode
-     * 
+     *
+     *
      * @return $this
      */
     public function setThemeMode(string $mode)
@@ -44,10 +43,10 @@ trait HasTheme
 
         return $this;
     }
-    
+
     /**
      * set theme mode to dark theme
-     * 
+     *
      * @return $this
      */
     public function darkMode()
@@ -59,7 +58,7 @@ trait HasTheme
 
     /**
      * set theme mode to light theme
-     * 
+     *
      * @return $this
      */
     public function lightMode()
@@ -68,12 +67,11 @@ trait HasTheme
 
         return $this;
     }
-    
+
     /**
      * set the dark mode option to on or off
-     * 
-     * @param bool $status = true
-     * 
+     *
+     * @param  bool  $status  = true
      * @return $this
      */
     public function setDarkMode(bool $status = true)
@@ -85,9 +83,8 @@ trait HasTheme
 
     /**
      * set theme pallete
-     * 
-     * @param string $pallete
-     * 
+     *
+     * @param  string  $pallete
      * @return $this
      */
     public function setThemePalette(string $palette)
@@ -99,9 +96,8 @@ trait HasTheme
 
     /**
      * convert the theme to array
-     * 
-     * @param string $mode
-     * 
+     *
+     * @param  string  $mode
      * @return $this
      */
     protected function themeToArray()
@@ -113,9 +109,8 @@ trait HasTheme
 
     /**
      * set theme from array
-     * 
-     * @param string $mode
-     * 
+     *
+     * @param  string  $mode
      * @return $this
      */
     protected function themeFromArray($array)

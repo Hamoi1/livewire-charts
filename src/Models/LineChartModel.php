@@ -1,14 +1,11 @@
 <?php
 
-
-namespace Asantibanez\LivewireCharts\Models;
-
-use Illuminate\Support\Collection;
+namespace Hamoi1\LivewireCharts\Models;
 
 /**
  * Class LineChartModel
- * @package Asantibanez\LivewireCharts\Models
- * @property boolean $isMultiLine
+ *
+ * @property bool $isMultiLine
  */
 class LineChartModel extends BaseChartModel
 {
@@ -79,11 +76,11 @@ class LineChartModel extends BaseChartModel
     }
 
     public function addMarker($title,
-                              $value,
-                              $strokeColor = 'green',
-                              $text = '',
-                              $textColor = '#ffffff',
-                              $textBackgroundColor = '#cccccc')
+        $value,
+        $strokeColor = 'green',
+        $text = '',
+        $textColor = '#ffffff',
+        $textBackgroundColor = '#cccccc')
     {
         $this->markers->push([
             'title' => $title,

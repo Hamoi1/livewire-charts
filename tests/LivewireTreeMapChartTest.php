@@ -1,14 +1,14 @@
 <?php
 
-namespace Asantibanez\LivewireCharts\Tests;
+namespace Hamoi1\LivewireCharts\Tests;
 
-use Asantibanez\LivewireCharts\Charts\LivewireTreeMapChart;
+use Hamoi1\LivewireCharts\Charts\LivewireTreeMapChart;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Livewire;
 
 class LivewireTreeMapChartTest extends TestCase
 {
-    private function buildComponent() : Testable
+    private function buildComponent(): Testable
     {
         return Livewire::test(LivewireTreeMapChart::class);
     }
@@ -16,17 +16,17 @@ class LivewireTreeMapChartTest extends TestCase
     /** @test */
     public function can_build_component()
     {
-        //Act
+        // Act
         $component = $this->buildComponent();
 
-        //Assert
+        // Assert
         $this->assertNotNull($component);
     }
 
     /** @test */
     public function should_emit_event_if_present()
     {
-        //Arrange
+        // Arrange
         $component = $this->buildComponent();
 
         $treeMapChartModel = $component->treeMapChartModel;
@@ -35,10 +35,10 @@ class LivewireTreeMapChartTest extends TestCase
 
         $component->set('treeMapChartModel', $treeMapChartModel);
 
-        //Act
+        // Act
         $component->runAction('onBlockClick', []);
 
-        //Assert
+        // Assert
         $component->assertDispatched('custom-event');
     }
 }

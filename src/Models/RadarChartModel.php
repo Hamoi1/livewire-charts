@@ -1,13 +1,12 @@
 <?php
 
-
-namespace Asantibanez\LivewireCharts\Models;
+namespace Hamoi1\LivewireCharts\Models;
 
 /**
  * Class ColumnChartModel
- * @package Asantibanez\LivewireCharts\Models
- * @property boolean $isMultiColumn
- * @property boolean $isStacked
+ *
+ * @property bool $isMultiColumn
+ * @property bool $isStacked
  */
 class RadarChartModel extends BaseChartModel
 {
@@ -52,7 +51,6 @@ class RadarChartModel extends BaseChartModel
 
         return $this;
     }
-
 
     public function addSeries($seriesName, $title, $value, $extras = [])
     {

@@ -1,15 +1,13 @@
 <?php
 
+namespace Hamoi1\LivewireCharts;
 
-namespace Asantibanez\LivewireCharts;
-
-
-use Asantibanez\LivewireCharts\Models\AreaChartModel;
-use Asantibanez\LivewireCharts\Models\ColumnChartModel;
-use Asantibanez\LivewireCharts\Models\LineChartModel;
-use Asantibanez\LivewireCharts\Models\PieChartModel;
-use Asantibanez\LivewireCharts\Models\RadarChartModel;
-use Asantibanez\LivewireCharts\Models\TreeMapChartModel;
+use Hamoi1\LivewireCharts\Models\AreaChartModel;
+use Hamoi1\LivewireCharts\Models\ColumnChartModel;
+use Hamoi1\LivewireCharts\Models\LineChartModel;
+use Hamoi1\LivewireCharts\Models\PieChartModel;
+use Hamoi1\LivewireCharts\Models\RadarChartModel;
+use Hamoi1\LivewireCharts\Models\TreeMapChartModel;
 
 class LivewireCharts
 {
@@ -49,11 +47,11 @@ class LivewireCharts
 
     public function radarChartModel()
     {
-        return new RadarChartModel();
+        return new RadarChartModel;
     }
 
     public function treeMapChartModel()
     {
-        return new TreeMapChartModel();
+        return new TreeMapChartModel;
     }
 }

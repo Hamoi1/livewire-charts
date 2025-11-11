@@ -1,8 +1,6 @@
 <?php
 
-
-namespace Asantibanez\LivewireCharts\Models;
-
+namespace Hamoi1\LivewireCharts\Models;
 
 trait HasSparkline
 {

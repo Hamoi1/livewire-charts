@@ -1,14 +1,14 @@
 <?php
 
-namespace Asantibanez\LivewireCharts\Tests;
+namespace Hamoi1\LivewireCharts\Tests;
 
-use Asantibanez\LivewireCharts\Charts\LivewireColumnChart;
+use Hamoi1\LivewireCharts\Charts\LivewireColumnChart;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Livewire;
 
 class LivewireColumnChartTest extends TestCase
 {
-    private function buildComponent() : Testable
+    private function buildComponent(): Testable
     {
         return Livewire::test(LivewireColumnChart::class);
     }
@@ -16,17 +16,17 @@ class LivewireColumnChartTest extends TestCase
     /** @test */
     public function can_build_component()
     {
-        //Act
+        // Act
         $component = $this->buildComponent();
 
-        //Assert
+        // Assert
         $this->assertNotNull($component);
     }
 
     /** @test */
     public function should_emit_event_if_present()
     {
-        //Arrange
+        // Arrange
         $component = $this->buildComponent();
 
         $columnChartModel = $component->columnChartModel;
@@ -35,10 +35,10 @@ class LivewireColumnChartTest extends TestCase
 
         $component->set('columnChartModel', $columnChartModel);
 
-        //Act
+        // Act
         $component->runAction('onColumnClick', []);
 
-        //Assert
+        // Assert
         $component->assertDispatched('custom-event');
     }
 }

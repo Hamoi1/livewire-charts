@@ -1,13 +1,12 @@
 <?php
 
-
-namespace Asantibanez\LivewireCharts\Models;
+namespace Hamoi1\LivewireCharts\Models;
 
 /**
  * Class ColumnChartModel
- * @package Asantibanez\LivewireCharts\Models
- * @property boolean $isMultiColumn
- * @property boolean $isStacked
+ *
+ * @property bool $isMultiColumn
+ * @property bool $isStacked
  */
 class ColumnChartModel extends BaseChartModel
 {

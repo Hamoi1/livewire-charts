@@ -1,14 +1,14 @@
 <?php
 
-namespace Asantibanez\LivewireCharts;
+namespace Hamoi1\LivewireCharts;
 
-use Asantibanez\LivewireCharts\Charts\LivewireAreaChart;
-use Asantibanez\LivewireCharts\Charts\LivewireColumnChart;
-use Asantibanez\LivewireCharts\Charts\LivewireLineChart;
-use Asantibanez\LivewireCharts\Charts\LivewirePieChart;
-use Asantibanez\LivewireCharts\Charts\LivewireRadarChart;
-use Asantibanez\LivewireCharts\Charts\LivewireTreeMapChart;
-use Asantibanez\LivewireCharts\Console\InstallCommand;
+use Hamoi1\LivewireCharts\Charts\LivewireAreaChart;
+use Hamoi1\LivewireCharts\Charts\LivewireColumnChart;
+use Hamoi1\LivewireCharts\Charts\LivewireLineChart;
+use Hamoi1\LivewireCharts\Charts\LivewirePieChart;
+use Hamoi1\LivewireCharts\Charts\LivewireRadarChart;
+use Hamoi1\LivewireCharts\Charts\LivewireTreeMapChart;
+use Hamoi1\LivewireCharts\Console\InstallCommand;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
@@ -41,7 +41,6 @@ class LivewireChartsServiceProvider extends ServiceProvider
             ]);
         }
     }
-
 
     private function registerViews()
     {
@@ -79,6 +78,7 @@ class LivewireChartsServiceProvider extends ServiceProvider
     {
         Blade::directive('livewireChartsScripts', function () {
             $scriptsUrl = asset('/vendor/livewire-charts/app.js');
+
             return <<<EOF
 <script src="$scriptsUrl"></script>
 EOF;

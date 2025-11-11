@@ -1,14 +1,14 @@
 <?php
 
-namespace Asantibanez\LivewireCharts\Tests;
+namespace Hamoi1\LivewireCharts\Tests;
 
-use Asantibanez\LivewireCharts\Charts\LivewireLineChart;
+use Hamoi1\LivewireCharts\Charts\LivewireLineChart;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Livewire;
 
 class LivewireLineChartTest extends TestCase
 {
-    private function buildComponent() : Testable
+    private function buildComponent(): Testable
     {
         return Livewire::test(LivewireLineChart::class);
     }
@@ -16,10 +16,10 @@ class LivewireLineChartTest extends TestCase
     /** @test */
     public function can_build_component()
     {
-        //Act
+        // Act
         $component = $this->buildComponent();
 
-        //Assert
+        // Assert
         $this->assertNotNull($component);
     }
 }

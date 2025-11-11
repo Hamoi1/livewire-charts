@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Asantibanez\LivewireCharts\Models;
+namespace Hamoi1\LivewireCharts\Models;
 
 /**
  * Class BaseChartModel
- * @package Asantibanez\LivewireCharts\Models
+ * @package Hamoi1\LivewireCharts\Models
  */
 class BaseChartModel
 {

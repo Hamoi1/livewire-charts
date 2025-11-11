@@ -1,19 +1,19 @@
 <?php
 
-
-namespace Asantibanez\LivewireCharts\Models;
+namespace Hamoi1\LivewireCharts\Models;
 
 /**
  * Class TreeMapChartModel
- * @package Asantibanez\LivewireCharts\Models
  */
 class TreeMapChartModel extends BaseChartModel
 {
-    use HasTitle;
     use HasColors;
+    use HasTitle;
 
     public $data;
+
     public $distributed;
+
     public $onBlockClickEventName;
 
     public function __construct()

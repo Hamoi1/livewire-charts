@@ -1,13 +1,13 @@
 <?php
 
-namespace Asantibanez\LivewireCharts\Charts;
+namespace Hamoi1\LivewireCharts\Charts;
 
-use Asantibanez\LivewireCharts\Models\RadarChartModel;
+use Hamoi1\LivewireCharts\Models\RadarChartModel;
 use Livewire\Component;
 
 /**
  * Class LivewireRadarChart
- * @package Asantibanez\LivewireCharts\Charts
+ * @package Hamoi1\LivewireCharts\Charts
  */
 class LivewireRadarChart extends Component
 {
